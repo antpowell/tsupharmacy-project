@@ -1,0 +1,115 @@
+@import "bourbon/bourbon"
+=border($c)
+  border: 2.5px solid $c
+
+$primaryColor: #77142B
+$secondaryColor: #E7E2E2
+$tertiaryColor: #9D344C
+$quaternaryColor: #520114
+
+.main
+  text-align: center
+  @include display(flex)
+  @include justify-content(center)
+  flex-direction: column
+  background: white
+  height: 100%
+  margin: 0 auto
+  //+border(black)
+
+  .jumbotron
+    padding: 0
+    margin: 0
+    background: $primaryColor
+    .carousel-inner
+      #img1,#img2,#img3,#img4
+        min-height: 560px
+        -webkit-background-size: cover
+        background-size: cover
+        background-position: center center
+
+      #img1
+        @include background-image(url('img/pic1.jpg'))
+        background-position: center 32%
+
+      #img2
+        @include background-image(url('img/diverse-university.jpg'))
+        background-position: center 30%
+      #img3
+        @include background-image(url('img/16_9/TSUPWalk.jpg'))
+        background-position: center 32%
+      #img4
+        @include background-image(url('img/nursing_home.jpg'))
+        background-position: center 55%
+
+    .carousel-caption
+      h2
+        color: $secondaryColor
+
+  .title
+    color: $secondaryColor
+
+  .-columns
+    display: flex
+    height: 1000px
+    width: 100%
+    background: $secondaryColor
+    color: $quaternaryColor
+    flex-direction: row
+    justify-content: center
+    margin: 0 auto
+    //+border(blue)
+    & div
+      //+border(green)
+      margin: auto 5px
+      padding: 0 3em
+      height: 95%
+      width: 33.33%
+      #logo, #lab
+        float: none
+        margin: auto
+      #logo
+        height: 200px
+        width: 200px
+      #lab
+        height: 200px
+
+  .container#popup
+    width: 100%
+    background: $secondaryColor
+    padding-bottom: 2%
+    button
+      white-space: normal
+  .container#form
+    background: $primaryColor
+    color: $secondaryColor
+    font-size: 2.5em
+    height: auto
+    width: 100%
+    @include display(flex)
+    @include flex-direction(column)
+    @include border-bottom-radius(15px)
+
+    h1
+      font-size: 1.5em
+      @include order(0)
+
+    form
+      width: auto
+      @include  display(flex)
+      @include flex-direction(column)
+
+      div, button
+        margin: .25em auto
+
+      span
+        border: 0em
+        top: 0
+
+      button
+        border-color: $primaryColor
+        color: $primaryColor
+        &:hover
+          background-color: $primaryColor
+          color: $secondaryColor
+          border-color: $secondaryColor

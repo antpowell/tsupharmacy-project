@@ -1,0 +1,181 @@
+doctype html
+html
+    head
+        title College of Pharmacy and Health Science
+        link(rel='stylesheet', type='text/css', href='main.css')
+        link(href='bootstrap/css/bootstrap.min.css', rel='stylesheet')
+        meta(name='viewport', content='width=device-width, initial-scale=1.0')
+        meta(charset='utf-8')
+    body
+        .main
+            .jumbotron(class='text-center')
+                #carousel(class='carousel slide')
+                    ul(class='carousel-indicators')
+                        li(data-target='#carousel' data-slide-to='0' class='active')
+                        li(data-target='#carousel' data-slide-to='1')
+                        li(data-target='#carousel' data-slide-to='2')
+                        li(data-target='#carousel' data-slide-to='3')
+                    .carousel-inner
+                        .item(class='active')
+                            //img(src='img/16_9/TSUPWalk.jpg' class='img-responsive')
+                            #img1
+                            .carousel-caption
+                                h2 A Working Community
+                        .item
+                            //img(src='img/16_9/pic5.jpg' class='img-responsive')
+                            #img2
+                            .carousel-caption
+                                h2 Can't Wait To Meet You
+                        .item
+                            //img(src='img/16_9/TSUPharmacy.jpg' class='img-responsive')
+                            #img3
+                            .carousel-caption
+                                h2 All Roads Lead to Texas Southern
+                        .item
+                            //img(src='img/16_9/images-class2017.jpg' class='img-responsive')
+                            #img4
+                            .carousel-caption
+                                h2 We Share Your Dreams
+                    a(class='carousel-control left' href='#carousel' data-slide='prev')
+                        span(class='icon-prev')
+                    a(class='carousel-control right' href='#carousel' data-slide='next')
+                        span(class='icon-next')
+
+                //h1.title College of Pharmacy and Health Science
+            .-columns
+                .aboutUs
+                    img(src='img/logo.jpg', class='img-responsive img-circle', id='logo')
+                    h1 Developing 21st Century Leaders
+                    p The Health Professions Pathway Career Center of Texas Southern University's College of Pharmacy and Health Science is here to guide health professionals. Your goals are important to us! We want to help you succeed!
+                    p Lorem ipsum dolor sit amet, ea pri option vivendo postulant, ei invenire posidonium pro. Indoctum euripidis ea vis. Id eam utamur efficiantur, id eam illum altera. Cum tota idque malis eu. Eu clita lobortis atomorum eos, est at malorum antiopam, vix ex utinam verterem. Lorem ipsum dolor sit amet, ea pri option vivendo postulant, ei invenire posidonium pro. Indoctum euripidis ea vis. Id eam utamur efficiantur, id eam illum altera. Cum tota idque malis eu. Eu clita lobortis atomorum eos, est at malorum antiopam, vix ex utinam verterem. Lorem ipsum dolor sit amet, ea pri option vivendo postulant, ei invenire posidonium pro. Indoctum euripidis ea vis. Id eam utamur efficiantur, id eam illum altera. Cum tota idque malis eu. Eu clita lobortis atomorum eos, est at malorum antiopam, vix ex utinam verterem.
+                .oppertunity
+                    img(src='img/researchlab.jpg', class='img-responsive img-circle', id='lab')
+                    h1 Opening doors for health professionals
+                    p Lorem ipsum dolor sit amet, ea pri option vivendo postulant, ei invenire posidonium pro. Indoctum euripidis ea vis. Id eam utamur efficiantur, id eam illum altera. Cum tota idque malis eu. Eu clita lobortis atomorum eos, est at malorum antiopam, vix ex utinam verterem. Lorem ipsum dolor sit amet, ea pri option vivendo postulant, ei invenire posidonium pro. Indoctum euripidis ea vis. Id eam utamur efficiantur, id eam illum altera. Cum tota idque malis eu. Eu clita lobortis atomorum eos, est at malorum antiopam, vix ex utinam verterem. Lorem ipsum dolor sit amet, ea pri option vivendo postulant, ei invenire posidonium pro. Indoctum euripidis ea vis. Id eam utamur efficiantur, id eam illum altera. Cum tota idque malis eu. Eu clita lobortis atomorum eos, est at malorum antiopam, vix ex utinam verterem.
+
+                .followUs
+                    img
+                    h1 Follows and Feeds
+                    p Lorem ipsum dolor sit amet, ea pri option vivendo postulant, ei invenire posidonium pro. Indoctum euripidis ea vis. Id eam utamur efficiantur, id eam illum altera. Cum tota idque malis eu. Eu clita lobortis atomorum eos, est at malorum antiopam, vix ex utinam verterem. Lorem ipsum dolor sit amet, ea pri option vivendo postulant, ei invenire posidonium pro. Indoctum euripidis ea vis. Id eam utamur efficiantur, id eam illum altera. Cum tota idque malis eu. Eu clita lobortis atomorum eos, est at malorum antiopam, vix ex utinam verterem. Lorem ipsum dolor sit amet, ea pri option vivendo postulant, ei invenire posidonium pro. Indoctum euripidis ea vis. Id eam utamur efficiantur, id eam illum altera. Cum tota idque malis eu. Eu clita lobortis atomorum eos, est at malorum antiopam, vix ex utinam verterem.
+            .container(id='popup')
+                .row
+                    button(class='btn btn-lg btn-default col-sm-2 col-sm-push-5', data-toggle='modal', data-target='#regView') FREE ITUNES GIFT CARD!
+                .modal( id='regView', role='dialog')
+                    .modal-dialog
+                        .modal-content
+                            //form header
+                        .modal-header
+                            h2.modal-title Let Us Help You Make It!
+                        .modal-body
+                            .container
+                                //form start
+                                .container(id='form')
+                                    form.form-inline
+                                        .input-group(class='input-group-lg col-sm-4')
+                                            span(class='input-group-addon glyphicon glyphicon-user')
+                                            input(type='text', class='form-control col-xs-20', placeholder='First Name', required)
+                                        .input-group(class='input-group-lg col-sm-4')
+                                            span(class='input-group-addon glyphicon glyphicon-user')
+                                            input(type='text', class='form-control col-xs 20', placeholder='Last Name', required)
+                                        .input-group(class='input-group-lg col-sm-4')
+                                            span(class='input-group-addon') @
+                                            input(type='eMail', class='form-control', placeholder='Email')
+                                        button(type="submit" class="btn btn-lg col-sm-1") Submit
+
+
+
+
+                //                        //Questions
+                //                        .form-inline
+                //                            h4 Question 1?
+                //                            label(class='radio-inline') 1
+                //                                input(type='radio' name='inlineRadioOptions' value='')
+                //                            label(class='radio-inline') 2
+                //                                input(type='radio' name='inlineRadioOptions' value='')
+                //                            label(class='radio-inline') 3
+                //                                input(type='radio' name='inlineRadioOptions' value='')
+                //                            label(class='radio-inline') 4
+                //                                input(type='radio' name='inlineRadioOptions' value='')
+                //                            label(class='radio-inline') 5
+                //                                input(type='radio' name='inlineRadioOptions' value='')
+                //                        .form-inline
+                //                            h4 Question 2?
+                //                            label(class='radio-inline') 1
+                //                                input(type='radio' name='inlineRadioOptions2' value='')
+                //                            label(class='radio-inline') 2
+                //                                input(type='radio' name='inlineRadioOptions2' value='')
+                //                            label(class='radio-inline') 3
+                //                                input(type='radio' name='inlineRadioOptions2' value='')
+                //                            label(class='radio-inline') 4
+                //                                input(type='radio' name='inlineRadioOptions2' value='')
+                //                            label(class='radio-inline') 5
+                //                                input(type='radio' name='inlineRadioOptions2' value='')
+                //
+                //                        .form-inline
+                //                            h4 Question 3?
+                //                            label(class='radio-inline') 1
+                //                                input(type='radio' name='inlineRadioOptions3' value='')
+                //                            label(class='radio-inline') 2
+                //                                input(type='radio' name='inlineRadioOptions3' value='')
+                //                            label(class='radio-inline') 3
+                //                                input(type='radio' name='inlineRadioOptions3' value='')
+                //                            label(class='radio-inline') 4
+                //                                input(type='radio' name='inlineRadioOptions3' value='')
+                //                            label(class='radio-inline') 5
+                //                                input(type='radio' name='inlineRadioOptions3' value='')
+                //                        .form-inline
+                //                            h4 Question 4?
+                //                            label(class='radio-inline') 1
+                //                                input(type='radio' name='inlineRadioOptions' value='')
+                //                            label(class='radio-inline') 2
+                //                                input(type='radio' name='inlineRadioOptions' value='')
+                //                            label(class='radio-inline') 3
+                //                                input(type='radio' name='inlineRadioOptions' value='')
+                //                            label(class='radio-inline') 4
+                //                                input(type='radio' name='inlineRadioOptions' value='')
+                //                            label(class='radio-inline') 5
+                //                                input(type='radio' name='inlineRadioOptions' value='')
+                //                        .form-inline
+                //                            h4 Question 5?
+                //                            label(class='radio-inline') 1
+                //                                input(type='radio' name='inlineRadioOptions' value='')
+                //                            label(class='radio-inline') 2
+                //                                input(type='radio' name='inlineRadioOptions' value='')
+                //                            label(class='radio-inline') 3
+                //                                input(type='radio' name='inlineRadioOptions' value='')
+                //                            label(class='radio-inline') 4
+                //                                input(type='radio' name='inlineRadioOptions' value='')
+                //                            label(class='radio-inline') 5
+                //                                input(type='radio' name='inlineRadioOptions' value='')
+                //                        .form-inline
+                //                            h4 Question 6?
+                //                            label(class='radio-inline') 1
+                //                                input(type='radio' name='inlineRadioOptions' value='')
+                //                            label(class='radio-inline') 2
+                //                                input(type='radio' name='inlineRadioOptions' value='')
+                //                            label(class='radio-inline') 3
+                //                                input(type='radio' name='inlineRadioOptions' value='')
+                //                            label(class='radio-inline') 4
+                //                                input(type='radio' name='inlineRadioOptions' value='')
+                //                            label(class='radio-inline') 5
+                //                                input(type='radio' name='inlineRadioOptions' value='')
+            //.container(id='form')
+            //    h1 Let Us Help You Make It!
+            //    form.form-inline
+            //        .input-group(class='input-group-lg col-sm-4')
+            //            span(class='input-group-addon glyphicon glyphicon-user')
+            //            input(type='text', class='form-control col-xs-20', placeholder='First Name', required)
+            //        .input-group(class='input-group-lg col-sm-4')
+            //            span(class='input-group-addon glyphicon glyphicon-user')
+            //            input(type='text', class='form-control col-xs 20', placeholder='Last Name', required)
+            //        .input-group(class='input-group-lg col-sm-4')
+            //            span(class='input-group-addon') @
+            //            input(type='eMail', class='form-control', placeholder='Email')
+            //        button(type="submit" class="btn btn-lg col-sm-1") Submit
+
+
+
+    script(src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js")
+    script(src='bootstrap/js/bootstrap.min.js')
+    footer
+        .-copyright
