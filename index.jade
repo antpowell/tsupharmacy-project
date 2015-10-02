@@ -40,8 +40,7 @@ html
                         span(class='icon-prev')
                     a(class='carousel-control right' href='#carousel' data-slide='next')
                         span(class='icon-next')
-
-                //h1.title College of Pharmacy and Health Science
+                            //h1.title College of Pharmacy and Health Science
             .-columns
                 .aboutUs
                     img(src='img/logo.jpg', class='img-responsive img-circle', id='logo')
@@ -52,7 +51,6 @@ html
                     img(src='img/researchlab.jpg', class='img-responsive img-circle', id='lab')
                     h1 Opening doors for health professionals
                     p Lorem ipsum dolor sit amet, ea pri option vivendo postulant, ei invenire posidonium pro. Indoctum euripidis ea vis. Id eam utamur efficiantur, id eam illum altera. Cum tota idque malis eu. Eu clita lobortis atomorum eos, est at malorum antiopam, vix ex utinam verterem. Lorem ipsum dolor sit amet, ea pri option vivendo postulant, ei invenire posidonium pro. Indoctum euripidis ea vis. Id eam utamur efficiantur, id eam illum altera. Cum tota idque malis eu. Eu clita lobortis atomorum eos, est at malorum antiopam, vix ex utinam verterem. Lorem ipsum dolor sit amet, ea pri option vivendo postulant, ei invenire posidonium pro. Indoctum euripidis ea vis. Id eam utamur efficiantur, id eam illum altera. Cum tota idque malis eu. Eu clita lobortis atomorum eos, est at malorum antiopam, vix ex utinam verterem.
-
                 .followUs
                     img
                     h1 Follows and Feeds
@@ -60,122 +58,102 @@ html
             .container(id='popup')
                 .row
                     button(class='btn btn-lg btn-default col-sm-2 col-sm-push-5', data-toggle='modal', data-target='#regView') FREE ITUNES GIFT CARD!
-                .modal( id='regView', role='dialog')
+                .modal( class='fade',id='regView', role='dialog')
                     .modal-dialog
+                        //Modal Content
                         .modal-content
-                            //form header
-                        .modal-header
-                            h2.modal-title Let Us Help You Make It!
-                        .modal-body
-                            .container
-                                //form start
+                            .modal-header
+                                button.close(type='button', data-dismiss='modal') &times;
+                                h3.modal-title Profession Survey
+                            .modal-body
+                                .container(id='survey')
+                                    //Questions
+                                    .form-inline
+                                        h4 Question 1?
+                                        label(class='radio-inline') 1
+                                            input(type='radio' name='inlineRadioOptions' value='')
+                                        label(class='radio-inline') 2
+                                            input(type='radio' name='inlineRadioOptions' value='')
+                                        label(class='radio-inline') 3
+                                            input(type='radio' name='inlineRadioOptions' value='')
+                                        label(class='radio-inline') 4
+                                            input(type='radio' name='inlineRadioOptions' value='')
+                                        label(class='radio-inline') 5
+                                            input(type='radio' name='inlineRadioOptions' value='')
+                                    .form-inline
+                                        h4 Question 2?
+                                        label(class='radio-inline') 1
+                                            input(type='radio' name='inlineRadioOptions2' value='')
+                                        label(class='radio-inline') 2
+                                            input(type='radio' name='inlineRadioOptions2' value='')
+                                        label(class='radio-inline') 3
+                                            input(type='radio' name='inlineRadioOptions2' value='')
+                                        label(class='radio-inline') 4
+                                            input(type='radio' name='inlineRadioOptions2' value='')
+                                        label(class='radio-inline') 5
+                                            input(type='radio' name='inlineRadioOptions2' value='')
+                                    .form-inline
+                                        h4 Question 3?
+                                        label(class='radio-inline') 1
+                                            input(type='radio' name='inlineRadioOptions3' value='')
+                                        label(class='radio-inline') 2
+                                            input(type='radio' name='inlineRadioOptions3' value='')
+                                        label(class='radio-inline') 3
+                                            input(type='radio' name='inlineRadioOptions3' value='')
+                                        label(class='radio-inline') 4
+                                            input(type='radio' name='inlineRadioOptions3' value='')
+                                        label(class='radio-inline') 5
+                                            input(type='radio' name='inlineRadioOptions3' value='')
+                                    .form-inline
+                                        h4 Question 4?
+                                        label(class='radio-inline') 1
+                                            input(type='radio' name='inlineRadioOptions' value='')
+                                        label(class='radio-inline') 2
+                                            input(type='radio' name='inlineRadioOptions' value='')
+                                        label(class='radio-inline') 3
+                                            input(type='radio' name='inlineRadioOptions' value='')
+                                        label(class='radio-inline') 4
+                                            input(type='radio' name='inlineRadioOptions' value='')
+                                        label(class='radio-inline') 5
+                                            input(type='radio' name='inlineRadioOptions' value='')
+                                    .form-inline
+                                        h4 Question 5?
+                                        label(class='radio-inline') 1
+                                            input(type='radio' name='inlineRadioOptions' value='')
+                                        label(class='radio-inline') 2
+                                            input(type='radio' name='inlineRadioOptions' value='')
+                                        label(class='radio-inline') 3
+                                            input(type='radio' name='inlineRadioOptions' value='')
+                                        label(class='radio-inline') 4
+                                            input(type='radio' name='inlineRadioOptions' value='')
+                                        label(class='radio-inline') 5
+                                            input(type='radio' name='inlineRadioOptions' value='')
+                                    .form-inline
+                                        h4 Question 6?
+                                        label(class='radio-inline') 1
+                                            input(type='radio' name='inlineRadioOptions' value='')
+                                        label(class='radio-inline') 2
+                                            input(type='radio' name='inlineRadioOptions' value='')
+                                        label(class='radio-inline') 3
+                                            input(type='radio' name='inlineRadioOptions' value='')
+                                        label(class='radio-inline') 4
+                                            input(type='radio' name='inlineRadioOptions' value='')
+                                        label(class='radio-inline') 5
+                                            input(type='radio' name='inlineRadioOptions' value='')
                                 .container(id='form')
                                     form.form-inline
-                                        .input-group(class='input-group-lg col-sm-4')
+                                        .input-group(class='input-group col-sm-12')
                                             span(class='input-group-addon glyphicon glyphicon-user')
                                             input(type='text', class='form-control col-xs-20', placeholder='First Name', required)
-                                        .input-group(class='input-group-lg col-sm-4')
+                                        .input-group(class='input-group col-sm-12')
                                             span(class='input-group-addon glyphicon glyphicon-user')
                                             input(type='text', class='form-control col-xs 20', placeholder='Last Name', required)
-                                        .input-group(class='input-group-lg col-sm-4')
+                                        .input-group(class='input-group col-sm-12')
                                             span(class='input-group-addon') @
                                             input(type='eMail', class='form-control', placeholder='Email')
-                                        button(type="submit" class="btn btn-lg col-sm-1") Submit
-
-
-
-
-                //                        //Questions
-                //                        .form-inline
-                //                            h4 Question 1?
-                //                            label(class='radio-inline') 1
-                //                                input(type='radio' name='inlineRadioOptions' value='')
-                //                            label(class='radio-inline') 2
-                //                                input(type='radio' name='inlineRadioOptions' value='')
-                //                            label(class='radio-inline') 3
-                //                                input(type='radio' name='inlineRadioOptions' value='')
-                //                            label(class='radio-inline') 4
-                //                                input(type='radio' name='inlineRadioOptions' value='')
-                //                            label(class='radio-inline') 5
-                //                                input(type='radio' name='inlineRadioOptions' value='')
-                //                        .form-inline
-                //                            h4 Question 2?
-                //                            label(class='radio-inline') 1
-                //                                input(type='radio' name='inlineRadioOptions2' value='')
-                //                            label(class='radio-inline') 2
-                //                                input(type='radio' name='inlineRadioOptions2' value='')
-                //                            label(class='radio-inline') 3
-                //                                input(type='radio' name='inlineRadioOptions2' value='')
-                //                            label(class='radio-inline') 4
-                //                                input(type='radio' name='inlineRadioOptions2' value='')
-                //                            label(class='radio-inline') 5
-                //                                input(type='radio' name='inlineRadioOptions2' value='')
-                //
-                //                        .form-inline
-                //                            h4 Question 3?
-                //                            label(class='radio-inline') 1
-                //                                input(type='radio' name='inlineRadioOptions3' value='')
-                //                            label(class='radio-inline') 2
-                //                                input(type='radio' name='inlineRadioOptions3' value='')
-                //                            label(class='radio-inline') 3
-                //                                input(type='radio' name='inlineRadioOptions3' value='')
-                //                            label(class='radio-inline') 4
-                //                                input(type='radio' name='inlineRadioOptions3' value='')
-                //                            label(class='radio-inline') 5
-                //                                input(type='radio' name='inlineRadioOptions3' value='')
-                //                        .form-inline
-                //                            h4 Question 4?
-                //                            label(class='radio-inline') 1
-                //                                input(type='radio' name='inlineRadioOptions' value='')
-                //                            label(class='radio-inline') 2
-                //                                input(type='radio' name='inlineRadioOptions' value='')
-                //                            label(class='radio-inline') 3
-                //                                input(type='radio' name='inlineRadioOptions' value='')
-                //                            label(class='radio-inline') 4
-                //                                input(type='radio' name='inlineRadioOptions' value='')
-                //                            label(class='radio-inline') 5
-                //                                input(type='radio' name='inlineRadioOptions' value='')
-                //                        .form-inline
-                //                            h4 Question 5?
-                //                            label(class='radio-inline') 1
-                //                                input(type='radio' name='inlineRadioOptions' value='')
-                //                            label(class='radio-inline') 2
-                //                                input(type='radio' name='inlineRadioOptions' value='')
-                //                            label(class='radio-inline') 3
-                //                                input(type='radio' name='inlineRadioOptions' value='')
-                //                            label(class='radio-inline') 4
-                //                                input(type='radio' name='inlineRadioOptions' value='')
-                //                            label(class='radio-inline') 5
-                //                                input(type='radio' name='inlineRadioOptions' value='')
-                //                        .form-inline
-                //                            h4 Question 6?
-                //                            label(class='radio-inline') 1
-                //                                input(type='radio' name='inlineRadioOptions' value='')
-                //                            label(class='radio-inline') 2
-                //                                input(type='radio' name='inlineRadioOptions' value='')
-                //                            label(class='radio-inline') 3
-                //                                input(type='radio' name='inlineRadioOptions' value='')
-                //                            label(class='radio-inline') 4
-                //                                input(type='radio' name='inlineRadioOptions' value='')
-                //                            label(class='radio-inline') 5
-                //                                input(type='radio' name='inlineRadioOptions' value='')
-            //.container(id='form')
-            //    h1 Let Us Help You Make It!
-            //    form.form-inline
-            //        .input-group(class='input-group-lg col-sm-4')
-            //            span(class='input-group-addon glyphicon glyphicon-user')
-            //            input(type='text', class='form-control col-xs-20', placeholder='First Name', required)
-            //        .input-group(class='input-group-lg col-sm-4')
-            //            span(class='input-group-addon glyphicon glyphicon-user')
-            //            input(type='text', class='form-control col-xs 20', placeholder='Last Name', required)
-            //        .input-group(class='input-group-lg col-sm-4')
-            //            span(class='input-group-addon') @
-            //            input(type='eMail', class='form-control', placeholder='Email')
-            //        button(type="submit" class="btn btn-lg col-sm-1") Submit
-
-
-
+                                        button(type="submit" class="btn col-sm-3") Submit
     script(src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js")
     script(src='bootstrap/js/bootstrap.min.js')
     footer
         .-copyright
+                         

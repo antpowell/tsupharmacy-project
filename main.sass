@@ -80,6 +80,13 @@ $quaternaryColor: #520114
     padding-bottom: 2%
     button
       white-space: normal
+  .modal-content
+    background: $primaryColor
+    color: $secondaryColor
+
+  .modal-header
+    button
+      color: $secondaryColor
   .container#form
     background: $primaryColor
     color: $secondaryColor
@@ -88,7 +95,11 @@ $quaternaryColor: #520114
     width: 100%
     @include display(flex)
     @include flex-direction(column)
-    @include border-bottom-radius(15px)
+
+  .container#survey
+    width: 100%
+    @include display(flex)
+    @include flex-direction(column)
 
     h1
       font-size: 1.5em
@@ -113,3 +124,5 @@ $quaternaryColor: #520114
           background-color: $primaryColor
           color: $secondaryColor
           border-color: $secondaryColor
+
+
