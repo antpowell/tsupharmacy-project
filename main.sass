@@ -96,11 +96,6 @@ $quaternaryColor: #520114
     @include display(flex)
     @include flex-direction(column)
 
-  .container#survey
-    width: 100%
-    @include display(flex)
-    @include flex-direction(column)
-
     h1
       font-size: 1.5em
       @include order(0)
@@ -112,17 +107,17 @@ $quaternaryColor: #520114
 
       div, button
         margin: .25em auto
-
-      span
-        border: 0em
-        top: 0
-
       button
-        border-color: $primaryColor
+        border-color: $quaternaryColor
         color: $primaryColor
         &:hover
           background-color: $primaryColor
           color: $secondaryColor
           border-color: $secondaryColor
+
+  .container#survey
+    width: 100%
+    @include display(flex)
+    @include flex-direction(column)
 
 

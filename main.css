@@ -105,6 +105,43 @@
     -moz-flex-direction: column;
     flex-direction: column;
     -ms-flex-direction: column; }
+    .main .container#form h1 {
+      font-size: 1.5em;
+      -webkit-box-ordinal-group: 0;
+      -moz-box-ordinal-group: 0;
+      box-ordinal-group: 0;
+      -webkit-order: 0;
+      -moz-order: 0;
+      order: 0;
+      -ms-flex-order: 0; }
+    .main .container#form form {
+      width: auto;
+      display: -webkit-box;
+      display: -moz-box;
+      display: box;
+      display: -webkit-flex;
+      display: -moz-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -moz-box-orient: vertical;
+      box-orient: vertical;
+      -webkit-box-direction: normal;
+      -moz-box-direction: normal;
+      box-direction: normal;
+      -webkit-flex-direction: column;
+      -moz-flex-direction: column;
+      flex-direction: column;
+      -ms-flex-direction: column; }
+      .main .container#form form div, .main .container#form form button {
+        margin: 0.25em auto; }
+      .main .container#form form button {
+        border-color: #520114;
+        color: #77142B; }
+        .main .container#form form button:hover {
+          background-color: #77142B;
+          color: #E7E2E2;
+          border-color: #E7E2E2; }
   .main .container#survey {
     width: 100%;
     display: -webkit-box;
@@ -124,45 +161,5 @@
     -moz-flex-direction: column;
     flex-direction: column;
     -ms-flex-direction: column; }
-    .main .container#survey h1 {
-      font-size: 1.5em;
-      -webkit-box-ordinal-group: 0;
-      -moz-box-ordinal-group: 0;
-      box-ordinal-group: 0;
-      -webkit-order: 0;
-      -moz-order: 0;
-      order: 0;
-      -ms-flex-order: 0; }
-    .main .container#survey form {
-      width: auto;
-      display: -webkit-box;
-      display: -moz-box;
-      display: box;
-      display: -webkit-flex;
-      display: -moz-flex;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-orient: vertical;
-      -moz-box-orient: vertical;
-      box-orient: vertical;
-      -webkit-box-direction: normal;
-      -moz-box-direction: normal;
-      box-direction: normal;
-      -webkit-flex-direction: column;
-      -moz-flex-direction: column;
-      flex-direction: column;
-      -ms-flex-direction: column; }
-      .main .container#survey form div, .main .container#survey form button {
-        margin: 0.25em auto; }
-      .main .container#survey form span {
-        border: 0em;
-        top: 0; }
-      .main .container#survey form button {
-        border-color: #77142B;
-        color: #77142B; }
-        .main .container#survey form button:hover {
-          background-color: #77142B;
-          color: #E7E2E2;
-          border-color: #E7E2E2; }
 
 /*# sourceMappingURL=main.css.map */
