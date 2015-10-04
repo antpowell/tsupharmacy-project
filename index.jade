@@ -128,18 +128,14 @@ html
                                             input(type='radio' name='inlineRadioOptions' value='')
                                         label(class='radio-inline') 5
                                             input(type='radio' name='inlineRadioOptions' value='')
-                                    .form-inline
-                                        h4 Question 6?
-                                        label(class='radio-inline') 1
-                                            input(type='radio' name='inlineRadioOptions' value='')
-                                        label(class='radio-inline') 2
-                                            input(type='radio' name='inlineRadioOptions' value='')
-                                        label(class='radio-inline') 3
-                                            input(type='radio' name='inlineRadioOptions' value='')
-                                        label(class='radio-inline') 4
-                                            input(type='radio' name='inlineRadioOptions' value='')
-                                        label(class='radio-inline') 5
-                                            input(type='radio' name='inlineRadioOptions' value='')
+                                    .form-inline(id='classification')
+                                        h4 What is your classification?
+                                        select.form-control
+                                            option Freshmen
+                                            option Sophomore
+                                            option Junior
+                                            option Senior
+
                                 .container(id='form')
                                     form.form-inline
                                         .input-group(class='input-group col-sm-12')
