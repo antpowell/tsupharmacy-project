@@ -12,8 +12,8 @@ $quaternaryColor: #520114
   @include display(flex)
   @include justify-content(center)
   flex-direction: column
-  background: white
-  height: 100%
+  background: $secondaryColor
+  height: 100vh
   margin: 0 auto
   //+border(black)
 
@@ -51,7 +51,7 @@ $quaternaryColor: #520114
 
   .-columns
     display: flex
-    height: 1000px
+    height: 100%
     width: 100%
     background: $secondaryColor
     color: $quaternaryColor
@@ -77,9 +77,19 @@ $quaternaryColor: #520114
   .container#popup
     width: 100%
     background: $secondaryColor
-    padding-bottom: 2%
-    button
+    padding-bottom: 10%
+    button#modal-call
       white-space: normal
+      background: $primaryColor
+      color: $secondaryColor
+      padding: 20px
+      @include border($quaternaryColor)
+      @include transition(all 1s)
+      &:hover
+        @include border($primaryColor)
+        @include background($secondaryColor)
+        color: $primaryColor
+
   .modal-content
     background: $primaryColor
     color: $secondaryColor

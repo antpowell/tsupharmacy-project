@@ -17,8 +17,8 @@
   justify-content: center;
   -ms-flex-pack: center;
   flex-direction: column;
-  background: white;
-  height: 100%;
+  background: #E7E2E2;
+  height: 100vh;
   margin: 0 auto; }
   .main .jumbotron {
     padding: 0;
@@ -51,7 +51,7 @@
     color: #E7E2E2; }
   .main .-columns {
     display: flex;
-    height: 1000px;
+    height: 100%;
     width: 100%;
     background: #E7E2E2;
     color: #520114;
@@ -74,9 +74,21 @@
   .main .container#popup {
     width: 100%;
     background: #E7E2E2;
-    padding-bottom: 2%; }
-    .main .container#popup button {
-      white-space: normal; }
+    padding-bottom: 10%; }
+    .main .container#popup button#modal-call {
+      white-space: normal;
+      background: #77142B;
+      color: #E7E2E2;
+      padding: 20px;
+      border: 2.5px solid #520114;
+      -webkit-transition: all 1s;
+      -moz-transition: all 1s;
+      transition: all 1s; }
+      .main .container#popup button#modal-call:hover {
+        border: 2.5px solid #77142B;
+        background: #E7E2E2;
+        background: #E7E2E2;
+        color: #77142B; }
   .main .modal-content {
     background: #77142B;
     color: #E7E2E2; }
