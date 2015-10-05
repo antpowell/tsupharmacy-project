@@ -81,9 +81,9 @@
       color: #E7E2E2;
       padding: 20px;
       border: 2.5px solid #520114;
-      -webkit-transition: all 1s;
-      -moz-transition: all 1s;
-      transition: all 1s; }
+      -webkit-transition: all 0.5s;
+      -moz-transition: all 0.5s;
+      transition: all 0.5s; }
       .main .container#popup button#modal-call:hover {
         border: 2.5px solid #77142B;
         background: #E7E2E2;
