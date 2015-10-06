@@ -57,7 +57,7 @@ html
                     p Lorem ipsum dolor sit amet, ea pri option vivendo postulant, ei invenire posidonium pro. Indoctum euripidis ea vis. Id eam utamur efficiantur, id eam illum altera. Cum tota idque malis eu. Eu clita lobortis atomorum eos, est at malorum antiopam, vix ex utinam verterem. Lorem ipsum dolor sit amet, ea pri option vivendo postulant, ei invenire posidonium pro. Indoctum euripidis ea vis. Id eam utamur efficiantur, id eam illum altera. Cum tota idque malis eu. Eu clita lobortis atomorum eos, est at malorum antiopam, vix ex utinam verterem. Lorem ipsum dolor sit amet, ea pri option vivendo postulant, ei invenire posidonium pro. Indoctum euripidis ea vis. Id eam utamur efficiantur, id eam illum altera. Cum tota idque malis eu. Eu clita lobortis atomorum eos, est at malorum antiopam, vix ex utinam verterem.
             .container(id='popup')
                 .row
-                    button(class='btn btn-lg btn-default col-sm-2 col-sm-push-5',id='modal-call', data-toggle='modal', data-target='#regView') FREE ITUNES GIFT CARD!
+                    button(class='btn btn-lg btn-default col-sm-2 col-sm-push-5 openSurvey',id='modal-call', data-toggle='modal', data-target='#regView') FREE ITUNES GIFT CARD!
                 .modal( class='fade',id='regView', role='dialog')
                     .modal-dialog
                         //Modal Content
@@ -66,7 +66,7 @@ html
                                 button.close(type='button', data-dismiss='modal') &times;
                                 h3.modal-title Profession Survey
                             .modal-body
-                                .container(id='survey')
+                                form.container(id='survey')
                                     //Questions
                                     .form-inline
                                         h4 Question 1?
@@ -107,27 +107,27 @@ html
                                     .form-inline
                                         h4 Question 4?
                                         label(class='radio-inline') 1
-                                            input(type='radio' name='inlineRadioOptions' value='')
+                                            input(type='radio' name='inlineRadioOptions4' value='')
                                         label(class='radio-inline') 2
-                                            input(type='radio' name='inlineRadioOptions' value='')
+                                            input(type='radio' name='inlineRadioOptions4' value='')
                                         label(class='radio-inline') 3
-                                            input(type='radio' name='inlineRadioOptions' value='')
+                                            input(type='radio' name='inlineRadioOptions4' value='')
                                         label(class='radio-inline') 4
-                                            input(type='radio' name='inlineRadioOptions' value='')
+                                            input(type='radio' name='inlineRadioOptions4' value='')
                                         label(class='radio-inline') 5
                                             input(type='radio' name='inlineRadioOptions' value='')
                                     .form-inline
                                         h4 Question 5?
                                         label(class='radio-inline') 1
-                                            input(type='radio' name='inlineRadioOptions' value='')
+                                            input(type='radio' name='inlineRadioOptions5' value='')
                                         label(class='radio-inline') 2
-                                            input(type='radio' name='inlineRadioOptions' value='')
+                                            input(type='radio' name='inlineRadioOptions5' value='')
                                         label(class='radio-inline') 3
-                                            input(type='radio' name='inlineRadioOptions' value='')
+                                            input(type='radio' name='inlineRadioOptions5' value='')
                                         label(class='radio-inline') 4
-                                            input(type='radio' name='inlineRadioOptions' value='')
+                                            input(type='radio' name='inlineRadioOptions5' value='')
                                         label(class='radio-inline') 5
-                                            input(type='radio' name='inlineRadioOptions' value='')
+                                            input(type='radio' name='inlineRadioOptions5' value='')
                                     .form-inline(id='classification')
                                         h4 What is your classification?
                                         select.form-control(name='classificationSelector')
@@ -136,22 +136,21 @@ html
                                             option Junior
                                             option Senior
 
-                                .container(id='form')
-                                    form.form-inline
-                                        .input-group(class='input-group col-sm-12')
-                                            span(class='input-group-addon')
-                                                span(class='glyphicon glyphicon-user')
-                                            input(type='text', class='form-control col-xs-20', placeholder='First Name', required)
-                                        .input-group(class='input-group col-sm-12')
-                                            span(class='input-group-addon')
-                                                span(class='glyphicon glyphicon-user')
-                                            input(type='text', class='form-control col-xs 20', placeholder='Last Name', required)
-                                        .input-group(class='input-group col-sm-12')
-                                            span(class='input-group-addon') @
-                                            input(type='eMail', class='form-control', placeholder='Email')
-                                        button(type="submit" class="btn col-sm-3") Submit
+                                    .input-group(class='input-group col-sm-12')
+                                        span(class='input-group-addon')
+                                            span(class='glyphicon glyphicon-user')
+                                        input(type='text', class='form-control col-xs-20', placeholder='First Name', required)
+                                    .input-group(class='input-group col-sm-12')
+                                        span(class='input-group-addon')
+                                            span(class='glyphicon glyphicon-user')
+                                        input(type='text', class='form-control col-xs 20', placeholder='Last Name', required)
+                                    .input-group(class='input-group col-sm-12')
+                                        span(class='input-group-addon') @
+                                        input(type='eMail', class='form-control', placeholder='Email')
+                                    button(type="submit", class="btn col-xs-3 col-xs-push-4 submitSurvey", action='getSurvey()') Submit
     script(src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js")
     script(src='bootstrap/js/bootstrap.min.js')
+    script(src='js/surveyController.js')
     footer
         .-copyright
                          

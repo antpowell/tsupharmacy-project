@@ -52,7 +52,7 @@ $quaternaryColor: #520114
   .-columns
     display: flex
     height: 100%
-    width: 100%
+    width: 90vw
     background: $secondaryColor
     color: $quaternaryColor
     flex-direction: row
@@ -65,6 +65,9 @@ $quaternaryColor: #520114
       padding: 0 3em
       height: 95%
       width: 33.33%
+      &:nth-child(2)
+        border-left: 1px  solid #C0C0C0
+        border-right: 1px  solid #C0C0C0
       #logo, #lab
         float: none
         margin: auto
@@ -97,37 +100,27 @@ $quaternaryColor: #520114
   .modal-header
     button
       color: $secondaryColor
-  .container#form
-    background: $primaryColor
-    color: $secondaryColor
-    font-size: 2.5em
-    height: auto
-    width: 100%
-    @include display(flex)
-    @include flex-direction(column)
-
-    h1
-      font-size: 1.5em
-      @include order(0)
-
-    form
-      width: auto
-      @include  display(flex)
-      @include flex-direction(column)
-
-      div, button
-        margin: .25em auto
-      button
-        border-color: $quaternaryColor
-        color: $primaryColor
-        &:hover
-          background-color: $primaryColor
-          color: $secondaryColor
-          border-color: $secondaryColor
 
   .container#survey
+    background: $primaryColor
+    color: $secondaryColor
+    font-size: 1em
+    height: auto
     width: 100%
+    margin: 0 auto
     @include display(flex)
     @include flex-direction(column)
-
-
+    label[class='radio-inline']
+      margin: 0 25px
+    input[name]
+      //font-size: 1.5em
+      margin-right: 5px
+    div
+      padding: 0 0 10px 0
+  button.submitSurvey
+    border-color: $quaternaryColor
+    color: $primaryColor
+    &:hover
+      background-color: $primaryColor
+      color: $secondaryColor
+      border-color: $secondaryColor
